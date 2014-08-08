@@ -55,7 +55,7 @@ plot4 <- function () {
     DT$datetime <- strptime(DT$datetime, format="%Y-%m-%d %H:%M:%S")
     
     # open the graphics device
-    #png(filename = plotfile)
+    png(filename = plotfile)
     
     #Create a 2 x 2 matrix for the plots
     par(mfrow = c(2, 2))
@@ -91,6 +91,6 @@ plot4 <- function () {
     
     
     # Close the graphics device 
-    #dev.off()
+    dev.off()
     
 }
